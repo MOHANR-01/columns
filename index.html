@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+    /* font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; */
+    body{
+      background: hsl(0, 0%, 95%);
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      display: grid;
+      grid-template-columns: 23rem 23rem 23em;
+      grid-auto-rows: 65vh;
+      margin: 125px;
+    }
+    .di{
+      padding: 40px;
+      position: relative;
+      text-align: left;
+    }
+    .one{
+      background-color: hsl(31, 77%, 52%);
+      border-radius: 10px 0px 0px 10px;
+    }
+    .three{
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0px 10px 10px 0px;
+    }
+    .two{
+      background-color: hsl(184, 100%, 22%);
+    }
+    .di h1{
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+    .di p{
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+    }
+    .di h3{
+      display: flex;
+      margin-top: 80px;
+      border: 3px solid white;
+      border-radius: 30px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 100;
+      text-align: center;
+      padding: 15px 30px;
+      position: absolute;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="card">
+      <div class="di one">
+        <img src="images/icon-sedans.svg">
+
+        <h1>Sedans</h1>
+
+        <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.</p>
+
+          <h3>Learn More</h3>
+      </div>
+      <div class="di two">
+        <img src="images/icon-suvs.svg">
+
+        <h1>SUVs</h1>
+
+        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.</p>
+
+        <h3>Learn More</h3>
+      </div>
+      <div class="di three">
+        <img src="images/icon-luxury.svg">
+
+        <h1>Luxury</h1>
+
+        <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.</p>
+
+          <h3>Learn More</h3>
+      </div>
+    </div>
+  </section>  
+
+</body>
+</html>
